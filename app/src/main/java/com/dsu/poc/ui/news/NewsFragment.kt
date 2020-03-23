@@ -1,4 +1,6 @@
 package com.dsu.poc.ui.news
 
-class NewsFragment {
+import com.dsu.poc.base.BaseFragment
+
+class NewsFragment : BaseFragment(){
 }

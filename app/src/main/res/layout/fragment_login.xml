@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data class="LoginFragmentBinding">
+        <variable
+            name="model"
+            type="com.dsu.poc.project.ui.login.model.LoginModel" />
+
+        <variable
+            name="viewModel"
+            type="com.dsu.poc.project.ui.login.LoginViewModel"/>
+
+    </data>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editUserName"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_margin="@dimen/margin_10dp"
+            android:hint="@string/user_name"
+            android:text="@={model.userName}" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editPassword"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_margin="@dimen/margin_10dp"
+            android:layout_below="@+id/editUserName"
+            android:hint="@string/password"
+            android:inputType="textWebPassword"
+            android:text="@={model.userPassWord}" />
+        <Button
+            android:id="@+id/loginbtn"
+            android:layout_below="@+id/editPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_margin="@dimen/margin_10dp"
+            android:text="@string/login" />
+
+
+    </RelativeLayout>
+</layout>

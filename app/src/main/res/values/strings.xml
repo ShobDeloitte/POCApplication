@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">POCApplication</string>
+    <string name="login_success">Successful Login</string>
+    <string name="error_password">Invalid Password</string>
+    <string name="error_username">Invalid Username</string>
+    <string name="login_error">Error Login</string>
+    <string name="login_ok">Ok</string>
+    <string name="user_name">UserName</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
 </resources>

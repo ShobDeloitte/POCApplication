@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/welcome_nav"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.dsu.poc.project.ui.login.LoginFragment"
+        android:label="login_fragment"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/move_to_news"
+            app:destination="@id/newsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/newsFragment"
+        android:name="com.dsu.poc.ui.news.NewsFragment"
+        android:label="fragment_news"
+        tools:layout="@layout/fragment_news">
+    </fragment>
+
+</navigation>
